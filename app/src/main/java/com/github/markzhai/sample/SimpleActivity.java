@@ -20,7 +20,7 @@ public class SimpleActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_demo);
         binding.setEmployee(employee);
         binding.setPresenter(new Presenter());
-        binding.viewStub.getViewStub().inflate();
+        binding.viewstub.getViewStub().inflate();
     }
 
     public class Presenter {
