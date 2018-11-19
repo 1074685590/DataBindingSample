@@ -18,6 +18,18 @@ public class Employee extends BaseObservable {
 
     private String mAvatar;
 
+    private String s;
+
+    @Bindable
+    public String getS() {
+        return s;
+    }
+
+    public void setS(String s) {
+        this.s = s;
+        notifyPropertyChanged(BR.s);
+    }
+
     public ObservableBoolean isFired = new ObservableBoolean();
 
     public Employee(String lastName, String firstName) {

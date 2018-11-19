@@ -36,5 +36,6 @@
     <string name="employ">Employ %s</string>
 
     <string name="change_component">Change Component</string>
+    <string name="lm_test">LM TEST</string>
 
 </resources>

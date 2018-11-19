@@ -29,6 +29,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/bt"
             android:onClick="@{(v) -> presenter.onEmployeeLongClick(employee, context)}"
             android:onFocusChange="@{(v, fcs) -> presenter.onFocusChange(employee)}"
             android:text="@{employee.lastName}"/>

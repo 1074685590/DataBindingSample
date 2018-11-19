@@ -32,6 +32,14 @@ public class FormModel extends BaseObservable {
         return mPassword;
     }
 
+    @Override
+    public String toString() {
+        return "FormModel{" +
+                "mName='" + mName + '\'' +
+                ", mPassword='" + mPassword + '\'' +
+                '}';
+    }
+
     public void setPassword(String password) {
         mPassword = password;
         notifyPropertyChanged(com.github.markzhai.sample.BR.password);

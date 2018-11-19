@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.github.markzhai.sample"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.github.markzhai.sample">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
-
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
     <uses-permission android:name="android.permission.READ_PROFILE"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
+        android:name=".DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".DemoApplication"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.github.markzhai.sample.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -30,22 +28,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.github.markzhai.sample.SimpleActivity"
+            android:name=".SimpleActivity"
             android:label="@string/demo_simple"/>
         <activity
-            android:name="com.github.markzhai.sample.TwoWayActivity"
+            android:name=".TwoWayActivity"
             android:label="@string/demo_inverse"/>
         <activity
-            android:name="com.github.markzhai.sample.ListActivity"
+            android:name=".ListActivity"
             android:label="@string/demo_list"/>
         <activity
-            android:name="com.github.markzhai.sample.ExpressionActivity"
+            android:name=".ExpressionActivity"
             android:label="@string/demo_expression"/>
         <activity
-            android:name="com.github.markzhai.sample.AnimationActivity"
+            android:name=".AnimationActivity"
             android:label="@string/demo_animation"/>
         <activity
-            android:name="com.github.markzhai.sample.LambdaActivity"
+            android:name=".LambdaActivity"
             android:label="@string/demo_lambda"/>
+        <activity android:name=".LMTestActivity">
+        </activity>
     </application>
+
 </manifest>

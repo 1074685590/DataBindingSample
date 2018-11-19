@@ -5,7 +5,6 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
 import com.github.markzhai.sample.component.ProductionComponent;
@@ -47,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
             }
             DemoApplication.isTest = !DemoApplication.isTest;
             recreate();
+        }
+        public void onClickLMTestDemo(View view) {
+            startActivity(new Intent(MainActivity.this, LMTestActivity.class));
         }
     }
 

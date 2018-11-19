@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Toast;
 
 import com.github.markzhai.sample.databinding.ActivityLambdaBinding;
@@ -40,5 +41,11 @@ public class LambdaActivity extends AppCompatActivity {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_lambda);
         mBinding.setEmployee(new Employee("mark", "zhai"));
         mBinding.setPresenter(new Presenter());
+        mBinding.bt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+            }
+        });
     }
 }
